@@ -8,66 +8,70 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Pokémon Slider</title>
   <link rel="shortcut icon" href="./assets/favicon.png" type="image/x-icon">
+  <link rel="stylesheet" href="./css/reset.css">
   <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="./css/responsivo.css">
   <link href="https://fonts.googleapis.com/css2?family=Outfit&display=swap" rel="stylesheet">
 </head>
 
 <body>
-  <header>
-    <img src="./assets/pokebola.png" alt="Pokébola">
-    <h1>MapaDev Week</h1>
+  <header class="cabecalho">
+    <img class="pokebola" src="./assets/pokebola.png" alt="Pokébola">
+    <h1 class="titulo">MapaDev Week</h1>
 
   </header>
-  <button>
-    <img src="./assets/seta.png" alt="seta voltar">
-  </button>
-  <ul>
-    <li>
-      <div>
-        <h2>Pikachu</h2>
-        <p>HP 300</p>
-      </div>
-      <div>
-        <img src="./assets/pikachu.png" alt="Pikachu">
-      </div>
-      <div>
-        <h3>Descrição</h3>
-        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Suscipit, facilis. Optio qui sapiente fuga dicta voluptate id, pariatur ab molestiae dolorum unde, culpa, ducimus iusto architecto! Voluptates, atque? Repudiandae, ut!</p>
-      </div>
-    </li>
 
-    <li>
-      <div>
-        <h2>Charizard</h2>
-        <p>HP 800</p>
-      </div>
-      <div>
-        <img src="./assets/charizard.png" alt="Charizard">
-      </div>
-      <div>
-        <h3>Descrição</h3>
-        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Suscipit, facilis. Optio qui sapiente fuga dicta voluptate id, pariatur ab molestiae dolorum unde, culpa, ducimus iusto architecto! Voluptates, atque? Repudiandae, ut!</p>
-      </div>
-    </li>
+  <main class="pokemon-slider">
 
-    <li>
-      <div>
-        <h2>Mewtwo</h2>
-        <p>HP 1200</p>
-      </div>
-      <div>
-        <img src="./assets/mewtwo.png" alt="Mewtwo">
-      </div>
-      <div>
-        <h3>Descrição</h3>
-        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Suscipit, facilis. Optio qui sapiente fuga dicta voluptate id, pariatur ab molestiae dolorum unde, culpa, ducimus iusto architecto! Voluptates, atque? Repudiandae, ut!</p>
-      </div>
-    </li>
-  </ul>
-  <button>
-    <img src="./assets/seta.png" alt="seta avançar">
-  </button>
-  <main>
+    <button class="btn-seta btn-voltar">
+      <img src="./assets/seta.png" alt="seta voltar">
+    </button>
+    <ul class="lista-pokemons">
+      <li class="cartao selecionado fundo-1">
+        <div class="informacoes">
+          <h2 class="nome">Pikachu</h2>
+          <p class="vida">HP 300</p>
+        </div>
+        <div class="container-imagem">
+          <img class="imagem-pokemon" src="./assets/pikachu.png" alt="Pikachu">
+        </div>
+        <div class="descricao">
+          <h3 class="titulo">Descrição</h3>
+          <p class="texto">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Suscipit, facilis. Optio qui sapiente fuga dicta voluptate id, pariatur ab molestiae dolorum unde, culpa, ducimus iusto architecto! Voluptates, atque? Repudiandae, ut!</p>
+        </div>
+
+      </li>
+      <li class="cartao fundo-2">
+        <div class="informacoes">
+          <h2 class="nome">Charizard</h2>
+          <p class="vida">HP 800</p>
+        </div>
+        <div class="container-imagem">
+          <img class="imagem-pokemon" src="./assets/charizard.png" alt="Charizard">
+        </div>
+        <div class="descricao">
+          <h3 class="titulo">Descrição</h3>
+          <p class="texto">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Suscipit, facilis. Optio qui sapiente fuga dicta voluptate id, pariatur ab molestiae dolorum unde, culpa, ducimus iusto architecto! Voluptates, atque? Repudiandae, ut!</p>
+        </div>
+
+      </li>
+      <li class="cartao fundo-3">
+        <div class="informacoes">
+          <h2 class="nome">Mewtwo</h2>
+          <p class="vida">HP 1200</p>
+        </div>
+        <div class="container-imagem">
+          <img class="imagem-pokemon" src="./assets/mewtwo.png" alt="Mewtwo">
+        </div>
+        <div class="descricao">
+          <h3 class="titulo">Descrição</h3>
+          <p class="texto">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Suscipit, facilis. Optio qui sapiente fuga dicta voluptate id, pariatur ab molestiae dolorum unde, culpa, ducimus iusto architecto! Voluptates, atque? Repudiandae, ut!</p>
+        </div>
+      </li>
+    </ul>
+    <button class="btn-seta">
+      <img src="./assets/seta.png" alt="seta avançar">
+    </button>
 
   </main>
 
